@@ -1,0 +1,79 @@
+2025-09-25 09:23:30,718 - processor.llm_processor - ERROR - OpenAI客户端初始化失败: Client.__init__() got an unexpected keyword argument 'proxies'
+2025-09-25 09:23:30,718 - __main__ - INFO - 开始为主题 '2023年人工智能进展' 生成自动摘要
+2025-09-25 09:23:30,718 - __main__ - INFO - 开始从 bbc 爬取文章
+2025-09-25 09:23:31,149 - crawler.bbc_crawler - INFO - 开始爬取BBC关于 '2023年人工智能进展' 的文章
+2025-09-25 09:23:43,700 - crawler.bbc_crawler - INFO - BBC爬虫完成，成功获取 5 篇文章
+2025-09-25 09:23:43,700 - __main__ - INFO - 从 bbc 成功获取 5 篇文章
+2025-09-25 09:23:46,707 - __main__ - INFO - 开始从 cnn 爬取文章
+2025-09-25 09:23:46,709 - crawler.cnn_crawler - INFO - 开始爬取CNN关于 '2023年人工智能进展' 的文章
+2025-09-25 09:23:57,523 - crawler.cnn_crawler - INFO - CNN爬虫完成，成功获取 5 篇文章
+2025-09-25 09:23:57,523 - __main__ - INFO - 从 cnn 成功获取 5 篇文章
+2025-09-25 09:24:00,527 - __main__ - INFO - 开始从 nytimes 爬取文章
+2025-09-25 09:24:00,529 - crawler.nytimes_crawler - INFO - 开始爬取纽约时报关于 '2023年人工智能进展' 的文章
+2025-09-25 09:24:11,484 - crawler.nytimes_crawler - INFO - 纽约时报爬虫完成，成功获取 5 篇文章
+2025-09-25 09:24:11,484 - __main__ - INFO - 从 nytimes 成功获取 5 篇文章
+2025-09-25 09:24:14,487 - __main__ - INFO - 开始从 reuters 爬取文章
+2025-09-25 09:24:14,495 - crawler.reuters_crawler - INFO - 开始爬取路透社关于 '2023年人工智能进展' 的文章
+2025-09-25 09:24:14,662 - crawler.base_crawler - WARNING - 请求失败，状态码: 401, URL: https://www.reuters.com/search/news?blob=2023%E5%B9%B4%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%BF%9B%E5%B1%95
+2025-09-25 09:24:14,663 - crawler.base_crawler - INFO - 第 1 次尝试失败，等待 2 秒后重试...
+2025-09-25 09:24:16,842 - crawler.base_crawler - WARNING - 请求失败，状态码: 401, URL: https://www.reuters.com/search/news?blob=2023%E5%B9%B4%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%BF%9B%E5%B1%95
+2025-09-25 09:24:16,842 - crawler.base_crawler - INFO - 第 2 次尝试失败，等待 2 秒后重试...
+2025-09-25 09:24:19,002 - crawler.base_crawler - WARNING - 请求失败，状态码: 401, URL: https://www.reuters.com/search/news?blob=2023%E5%B9%B4%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%BF%9B%E5%B1%95
+2025-09-25 09:24:19,002 - crawler.base_crawler - ERROR - 达到最大重试次数，无法获取URL: https://www.reuters.com/search/news?blob=2023%E5%B9%B4%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%BF%9B%E5%B1%95
+2025-09-25 09:24:19,004 - crawler.reuters_crawler - WARNING - 路透社爬虫失败，使用模拟数据
+2025-09-25 09:24:19,004 - __main__ - INFO - 从 reuters 成功获取 10 篇文章
+2025-09-25 09:24:22,009 - __main__ - INFO - 开始从 Xinhua 爬取文章
+2025-09-25 09:24:22,015 - crawler.xinhua_crawler - INFO - 开始爬取新华社关于 '2023年人工智能进展' 的文章
+2025-09-25 09:24:22,261 - crawler.base_crawler - WARNING - 请求失败，状态码: 500, URL: http://so.news.cn/getNews?keyword=2023%E5%B9%B4%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%BF%9B%E5%B1%95&curPage=1
+2025-09-25 09:24:22,261 - crawler.base_crawler - INFO - 第 1 次尝试失败，等待 2 秒后重试...
+2025-09-25 09:24:24,436 - crawler.base_crawler - WARNING - 请求失败，状态码: 500, URL: http://so.news.cn/getNews?keyword=2023%E5%B9%B4%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%BF%9B%E5%B1%95&curPage=1
+2025-09-25 09:24:24,437 - crawler.base_crawler - INFO - 第 2 次尝试失败，等待 2 秒后重试...
+2025-09-25 09:24:26,664 - crawler.base_crawler - WARNING - 请求失败，状态码: 500, URL: http://so.news.cn/getNews?keyword=2023%E5%B9%B4%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%BF%9B%E5%B1%95&curPage=1
+2025-09-25 09:24:26,665 - crawler.base_crawler - ERROR - 达到最大重试次数，无法获取URL: http://so.news.cn/getNews?keyword=2023%E5%B9%B4%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%BF%9B%E5%B1%95&curPage=1
+2025-09-25 09:24:26,665 - crawler.xinhua_crawler - WARNING - 新华社爬虫失败，使用模拟数据
+2025-09-25 09:24:26,665 - __main__ - INFO - 从 Xinhua 成功获取 10 篇文章
+2025-09-25 09:24:29,679 - __main__ - INFO - 爬取完成，共获取 35 篇文章
+2025-09-25 09:24:29,680 - processor.data_processor - INFO - 开始处理 35 篇文章
+2025-09-25 09:24:29,680 - processor.data_processor - WARNING - 文章过短，跳过: BBC: 2023年人工智能进展 最新进展报告
+2025-09-25 09:24:29,680 - processor.data_processor - WARNING - 文章过短，跳过: BBC: 2023年人工智能进展 最新进展报告
+2025-09-25 09:24:29,680 - processor.data_processor - WARNING - 文章过短，跳过: BBC: 2023年人工智能进展 最新进展报告
+2025-09-25 09:24:29,680 - processor.data_processor - WARNING - 文章过短，跳过: BBC: 2023年人工智能进展 最新进展报告
+2025-09-25 09:24:29,680 - processor.data_processor - WARNING - 文章过短，跳过: BBC: 2023年人工智能进展 最新进展报告
+2025-09-25 09:24:29,680 - processor.data_processor - WARNING - 文章过短，跳过: CNN: 2023年人工智能进展 全球视角
+2025-09-25 09:24:29,680 - processor.data_processor - WARNING - 文章过短，跳过: CNN: 2023年人工智能进展 全球视角
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: CNN: 2023年人工智能进展 全球视角
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: CNN: 2023年人工智能进展 全球视角
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: CNN: 2023年人工智能进展 全球视角
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 纽约时报: 2023年人工智能进展 深度分析
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 纽约时报: 2023年人工智能进展 深度分析
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 纽约时报: 2023年人工智能进展 深度分析
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 纽约时报: 2023年人工智能进展 深度分析
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 纽约时报: 2023年人工智能进展 深度分析
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 路透社: 2023年人工智能进展 财经分析 #1
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 路透社: 2023年人工智能进展 财经分析 #2
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 路透社: 2023年人工智能进展 财经分析 #3
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 路透社: 2023年人工智能进展 财经分析 #4
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 路透社: 2023年人工智能进展 财经分析 #5
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 路透社: 2023年人工智能进展 财经分析 #6
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 路透社: 2023年人工智能进展 财经分析 #7
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 路透社: 2023年人工智能进展 财经分析 #8
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 路透社: 2023年人工智能进展 财经分析 #9
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 路透社: 2023年人工智能进展 财经分析 #10
+2025-09-25 09:24:29,681 - processor.data_processor - WARNING - 文章过短，跳过: 新华社: 2023年人工智能进展 深度报道 #1
+2025-09-25 09:24:29,682 - processor.data_processor - WARNING - 文章过短，跳过: 新华社: 2023年人工智能进展 深度报道 #2
+2025-09-25 09:24:29,682 - processor.data_processor - WARNING - 文章过短，跳过: 新华社: 2023年人工智能进展 深度报道 #3
+2025-09-25 09:24:29,682 - processor.data_processor - WARNING - 文章过短，跳过: 新华社: 2023年人工智能进展 深度报道 #4
+2025-09-25 09:24:29,682 - processor.data_processor - WARNING - 文章过短，跳过: 新华社: 2023年人工智能进展 深度报道 #5
+2025-09-25 09:24:29,682 - processor.data_processor - WARNING - 文章过短，跳过: 新华社: 2023年人工智能进展 深度报道 #6
+2025-09-25 09:24:29,682 - processor.data_processor - WARNING - 文章过短，跳过: 新华社: 2023年人工智能进展 深度报道 #7
+2025-09-25 09:24:29,682 - processor.data_processor - WARNING - 文章过短，跳过: 新华社: 2023年人工智能进展 深度报道 #8
+2025-09-25 09:24:29,682 - processor.data_processor - WARNING - 文章过短，跳过: 新华社: 2023年人工智能进展 深度报道 #9
+2025-09-25 09:24:29,682 - processor.data_processor - WARNING - 文章过短，跳过: 新华社: 2023年人工智能进展 深度报道 #10
+2025-09-25 09:24:29,682 - processor.data_processor - INFO - 处理完成，保留 0 篇有效文章
+2025-09-25 09:24:29,682 - processor.llm_processor - INFO - 开始使用LLM分析 0 篇文章
+2025-09-25 09:24:29,682 - processor.llm_processor - INFO - LLM分析完成
+2025-09-25 09:24:29,682 - generator.page_generator - INFO - 开始生成关于 '2023年人工智能进展' 的摘要页面
+2025-09-25 09:24:29,687 - generator.page_generator - INFO - HTML文件已成功保存: ./output/summary_2023年人工智能进展.html
+2025-09-25 09:24:29,687 - generator.page_generator - INFO - 摘要页面已保存至: ./output/summary_2023年人工智能进展.html
+2025-09-25 09:24:29,687 - __main__ - INFO - 摘要生成完成，总耗时: 58.97秒
+2025-09-25 09:24:29,687 - __main__ - INFO - 摘要页面已保存至: ./output/summary_2023年人工智能进展.html
